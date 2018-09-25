@@ -20,4 +20,9 @@ class PageController extends Controller
         return "Latest Blog Post";
     }
 
+    public function submitContact()
+    {
+        return "Done Submitted";
+    }
+
 }

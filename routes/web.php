@@ -13,8 +13,8 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
-Route::get('/about', 'PageController@about');
-Route::get('/contact', 'PageController@contact');
-Route::post('/contact', 'PageController@contact');
-Route::get('/blog', 'PageController@blog');
+})->name(home);
+Route::get('/about', 'PageController@about')->name(about);
+Route::get('/contact', 'PageController@contact')->name(contact);
+Route::post('/contact', 'PageController@submitContact');
+Route::get('/blog', 'PageController@blog')->name(blog);
